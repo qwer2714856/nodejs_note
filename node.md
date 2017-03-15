@@ -13,3 +13,12 @@ c.ft = function(){
 错误输出和标准输出
 console.error()
 console.log()
+
+
+Buffer类
+var buf = new Buffer(10);
+buf.fill(255);
+ff ff ff ff ff ff ff ff ff ff
+
+buf.fill(256)
+00 00 00 00 00 00 00 00 00 00 00这个结果是这么来的256转十六进制是100底层c ++会舍去前面大第二位的那位得到结果一定是00
